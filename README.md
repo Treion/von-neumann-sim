@@ -10,6 +10,11 @@
   <img src="https://github.com/Treion/von-neumann-sim/blob/main/Screenshot_20260506_170627.png?raw=true" alt="Banner" width="100%"/>
 </p>
 
+
+<p align="center">
+  <img src="https://github.com/Treion/von-neumann-sim/blob/main/Screenshot_20260507_050506.png?raw=true" alt="Banner" width="100%"/>
+</p>
+
 ---
 
 ## Features
