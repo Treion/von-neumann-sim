@@ -6,6 +6,10 @@ An interactive learning website that teaches the fundamentals of Von Neumann com
   <img src="https://github.com/Treion/von-neumann-sim/blob/main/Screenshot_20260506_170137.png?raw=true" alt="Banner" width="100%"/>
 </p>
 
+<p align="center">
+  <img src="https://github.com/Treion/von-neumann-sim/blob/main/Screenshot_20260506_170627.png?raw=true" alt="Banner" width="100%"/>
+</p>
+
 ---
 
 ## Features
