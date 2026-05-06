@@ -135,4 +135,4 @@ von-neumann-simulator/
 
 ## License
 
-This project is open source. See `LICENSE` for details.
+This project is completely open source.
