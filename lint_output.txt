@@ -1,0 +1,81 @@
+
+> my-app@0.0.0 lint
+> eslint .
+
+
+/home/treion/Codes/app/api/lib/http.ts
+  58:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  74:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/home/treion/Codes/app/db/seed.ts
+  5:9  error  'db' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/home/treion/Codes/app/src/components/AuthLayout.tsx
+  122:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/treion/Codes/app/src/components/AuthLayout.tsx:122:7
+  120 |   useEffect(() => {
+  121 |     if (isCollapsed) {
+> 122 |       setIsResizing(false);
+      |       ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  123 |     }
+  124 |   }, [isCollapsed]);
+  125 |  react-hooks/set-state-in-effect
+
+/home/treion/Codes/app/src/components/ui/accordion.tsx
+  1:1  warning  Unused eslint-disable directive (no problems were reported from 'react-refresh/only-export-components')
+
+/home/treion/Codes/app/src/components/ui/badge.tsx
+  46:17  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/treion/Codes/app/src/components/ui/button-group.tsx
+  82:3  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/treion/Codes/app/src/components/ui/button.tsx
+  62:18  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/treion/Codes/app/src/components/ui/dialog.tsx
+  1:1  warning  Unused eslint-disable directive (no problems were reported from 'react-refresh/only-export-components')
+
+/home/treion/Codes/app/src/components/ui/form.tsx
+  159:3  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/treion/Codes/app/src/components/ui/hover-card.tsx
+  1:1  warning  Unused eslint-disable directive (no problems were reported from 'react-refresh/only-export-components')
+
+/home/treion/Codes/app/src/components/ui/navigation-menu.tsx
+  167:3  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/treion/Codes/app/src/components/ui/popover.tsx
+  1:1  warning  Unused eslint-disable directive (no problems were reported from 'react-refresh/only-export-components')
+
+/home/treion/Codes/app/src/components/ui/sidebar.tsx
+  611:26  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+/home/treion/Codes/app/src/components/ui/sidebar.tsx:611:26
+  609 |   // Random width between 50 to 90%.
+  610 |   const width = React.useMemo(() => {
+> 611 |     return `${Math.floor(Math.random() * 40) + 50}%`
+      |                          ^^^^^^^^^^^^^ Cannot call impure function
+  612 |   }, [])
+  613 |
+  614 |   return (  react-hooks/purity
+  725:3   error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-refresh/only-export-components
+
+/home/treion/Codes/app/src/components/ui/slider.tsx
+  1:1  warning  Unused eslint-disable directive (no problems were reported from 'react-refresh/only-export-components')
+
+/home/treion/Codes/app/src/components/ui/tabs.tsx
+  1:1  warning  Unused eslint-disable directive (no problems were reported from 'react-refresh/only-export-components')
+
+✖ 17 problems (11 errors, 6 warnings)
+  0 errors and 6 warnings potentially fixable with the `--fix` option.
+
