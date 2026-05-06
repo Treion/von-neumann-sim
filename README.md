@@ -2,6 +2,10 @@
 
 An interactive learning website that teaches the fundamentals of Von Neumann computer architecture through a fully visual, step-by-step hardware simulation. Users can write assembly-like programs, watch them execute through the CPU cycle, and inspect every component in real time.
 
+<p align="center">
+  <img src="https://github.com/Treion/von-neumann-sim/blob/main/Screenshot_20260506_170137.png?raw=true" alt="Banner" width="100%"/>
+</p>
+
 ---
 
 ## Features
