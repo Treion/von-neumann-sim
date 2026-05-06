@@ -49,27 +49,19 @@ git clone https://github.com/your-username/von-neumann-simulator.git
 cd von-neumann-simulator
 ```
 
-**2. Set up environment variables**
-
-```bash
-cp .env.example .env
-```
-
-Open `.env` and fill in any required values (database connection strings, ports, etc.).
-
-**3. Install dependencies**
+**2. Install dependencies**
 
 ```bash
 npm install
 ```
 
-**4. Start the development server**
+**3. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-**5. Open the app**
+**4. Open the app**
 
 Navigate to `http://localhost:5173` (or whichever port is shown in your terminal) in your browser.
 
